@@ -37,7 +37,7 @@ export const LoginPage = () => {
 
             // Store token in localStorage
             localStorage.setItem("token", token);
-            navigate(`/main`);
+            navigate(`/dashboard`);
 
         } catch (err: any) {
             setError(err.response?.data?.message || "Login failed. Please try again.");

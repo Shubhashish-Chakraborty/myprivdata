@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { LoginPage } from "./pages/Login";
 import { SignupPage } from "./pages/Signup";
+import { Dashboard } from "./pages/dashboard";
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
                         <Route path="*" element={<NotFound />} />
                         <Route path="login" element={<LoginPage />} />
                         <Route path="signup" element={<SignupPage />} />
+                        <Route path="dashboard" element={<Dashboard />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
