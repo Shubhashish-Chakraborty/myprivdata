@@ -4,7 +4,7 @@ import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { LoginPage } from "./pages/Login";
 import { SignupPage } from "./pages/Signup";
-import { Dashboard } from "./pages/dashboard";
+import { Dashboard } from "./pages/Dashboard";
 
 export default function App() {
 
