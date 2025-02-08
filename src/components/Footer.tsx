@@ -5,16 +5,16 @@ import { Twitter } from "../icons/socialIcons/Twitter";
 
 export const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-10">
+        <footer className="bg-gray-900 flex justify-center md:text-left text-center text-white py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                     {/* Column 1: About */}
-                    <div>
+                    {/* <div>
                         <h3 className="text-lg font-semibold mb-4">About Me</h3>
                         <p onClick={() => {window.open("https://shubhhere.vercel.app")}} className="text-sm hover:text-white transition-all duration-500 cursor-pointer text-gray-400">
                             Portfolio
                         </p>
-                    </div>
+                    </div> */}
 
                     {/* Column 2: Quick Links */}
                     <div>
@@ -28,7 +28,7 @@ export const Footer = () => {
                     {/* Column 3: Social Media */}
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-                        <div className="flex space-x-4">
+                        <div className="flex space-x-4 justify-center">
                             <a href="https://twitter.com/__Shubhashish__" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 hover:-translate-y-2 transition-all duration-500">
                                 <Twitter/>
                             </a>
