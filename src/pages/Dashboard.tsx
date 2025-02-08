@@ -41,6 +41,11 @@ export const Dashboard = () => {
             <div className="text-white font-extrabold text-center text-2xl md:text-4xl">
                 Welcome {welcomeName}!
             </div>
+            <div className="mt-10 text-center text-xl md:text-3xl text-green-400 bg-gray-900 font-bold shadow-emerald-200 shadow-md">
+                Thanks for Registering <br/>
+                Website Under Development, Soon You will be Notified <br/>
+                When it is Ready!!
+            </div>
         </>
     )
 

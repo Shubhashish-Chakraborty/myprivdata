@@ -3,6 +3,7 @@ import { Button } from "./ui/Button";
 import { Login } from "../icons/NavbarIcons/Login";
 import { useNavigate } from "react-router-dom";
 import { navbarHeadingLines } from "./navbarHeadings";
+import { Github } from "../icons/socialIcons/Github";
 
 export const Navbar = () => {
     const navigate = useNavigate();
@@ -68,8 +69,13 @@ export const Navbar = () => {
             </div>
 
             {/* Login Button */}
-            <div>
-                <Button text="LogIn" onClick={() => {navigate("login")}} variant="primary" startIcon={<Login />} />
+            <div className="flex gap-2 flex-col md:flex-row">
+                <div>
+                    <Button text="OpenSource" onClick={() => {window.open("https://github.com/Shubhashish-Chakraborty/myprivdata")}} variant="admin" startIcon={<Github />} />
+                </div>
+                <div className="flex justify-center">
+                    <Button text="LogIn" onClick={() => {navigate("login")}} variant="primary" startIcon={<Login />} />
+                </div>
             </div>
         </div>
     );
