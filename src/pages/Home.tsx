@@ -7,7 +7,7 @@ export const Home = () => {
 
     return (
         <div className="mt-5 text-center font-extrabold p-6">
-            <div className="animate-bounce text-xl md:text-6xl">
+            <div className="animate-bounce text-white text-xl md:text-6xl">
                 HomePage Launching Soon!!
             </div>
             <div className="flex justify-center mt-10">
