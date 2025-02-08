@@ -69,7 +69,7 @@ export const Navbar = () => {
 
             {/* Login Button */}
             <div>
-                <Button text="LogIn" variant="primary" startIcon={<Login />} />
+                <Button text="LogIn" onClick={() => {navigate("login")}} variant="primary" startIcon={<Login />} />
             </div>
         </div>
     );
