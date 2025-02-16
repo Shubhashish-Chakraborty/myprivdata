@@ -79,6 +79,17 @@ export const LoginPage = () => {
                         Sign Up
                     </span>
                 </p>
+
+                <p className="text-white text-center mt-2">
+                    <span
+                        onClick={() => {
+                            alert("Coming Soon!!");
+                        }}
+                        className="text-blue-400 font-bold cursor-pointer hover:text-emerald-400 transition-all duration-500"
+                    >
+                        Forgot Password?
+                    </span>
+                </p>
                 
             </div>
         </div>
