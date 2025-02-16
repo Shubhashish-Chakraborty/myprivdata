@@ -13,6 +13,7 @@ export const SignupPage = () => {
     const fullNameRef = useRef<HTMLInputElement>(null);
     const usernameRef = useRef<HTMLInputElement>(null);
     const contactNumberRef = useRef<HTMLInputElement>(null);
+    const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
 
     // State for error and success messages
@@ -62,10 +63,11 @@ export const SignupPage = () => {
         const fullName = fullNameRef.current?.value;
         const username = usernameRef.current?.value;
         const contactNumber = contactNumberRef.current?.value ? Number(contactNumberRef.current.value) : null;
+        const email = emailRef.current?.value;
         const password = passwordRef.current?.value;
 
         // Basic validation
-        if (!fullName || !username || !contactNumber || !password) {
+        if (!fullName || !username || !contactNumber || !email || !password) {
             setError("All fields are required.");
             return;
         }
@@ -81,6 +83,7 @@ export const SignupPage = () => {
                 fullName,
                 username,
                 contactNumber,
+                email,
                 password,
             });
 
@@ -110,6 +113,7 @@ export const SignupPage = () => {
                     <Input ref={fullNameRef} type="text" placeholder="Enter Fullname" />
                     <Input ref={usernameRef} type="text" placeholder="Enter Username" />
                     <Input ref={contactNumberRef} type="number" placeholder="Enter Contact Number" />
+                    <Input ref={emailRef} type="email" placeholder="Enter Email" />
                     <Input ref={passwordRef} type="password" placeholder="Enter password" />
                 </div>
 
