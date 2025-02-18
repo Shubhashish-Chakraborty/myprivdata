@@ -10,6 +10,15 @@ export const Navbar = () => {
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
 
+    const isLoggedIn = localStorage.getItem('token') !== null;
+
+    const handleLogout = () => {
+        // Remove token from localStorage (or sessionStorage)
+        localStorage.removeItem('token');
+        // Redirect user to the homepage or login page
+        navigate('/');
+    };
+
     useEffect(() => {
         if (!navbarHeadingLines[index]) return;
 
@@ -70,12 +79,24 @@ export const Navbar = () => {
 
             {/* Login Button */}
             <div className="flex gap-2 flex-col md:flex-row">
-                <div>
+                {!isLoggedIn ? (
+                    <Button onClick={() => navigate('login')} variant="primary" text="LogIN" startIcon={<Login />} />
+                ) : (
+                    <Button onClick={handleLogout} variant="other" text="LogOUT" />
+                )}
+                <div
+                    onClick={() =>
+                        window.open("https://github.com/Shubhashish-Chakraborty/StudyWithShubh")
+                    }
+                >
+                    <Button variant="secondary" text="Github" endIcon={<Github />} />
+                </div>
+                {/* <div>
                     <Button text="OpenSource" onClick={() => {window.open("https://github.com/Shubhashish-Chakraborty/myprivdata")}} variant="admin" startIcon={<Github />} />
                 </div>
                 <div className="flex justify-center">
                     <Button text="LogIn" onClick={() => {navigate("login")}} variant="primary" startIcon={<Login />} />
-                </div>
+                </div> */}
             </div>
         </div>
     );
