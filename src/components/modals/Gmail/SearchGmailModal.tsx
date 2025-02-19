@@ -78,7 +78,7 @@ export const SearchGmailModal = ({ onClose }: SearchGmailModalProps) => {
                         <ul className="max-h-40 overflow-y-auto">
                             {searchResults.map((account, index) => (
                                 <li key={index} className="p-2 border-b last:border-b-0">
-                                    <span className="font-medium">{account.email}</span> - {account.name}
+                                    <span className="font-medium">{account.email}</span> - {account.password}
                                 </li>
                             ))}
                         </ul>
