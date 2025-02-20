@@ -86,7 +86,7 @@ export const Navbar = () => {
                 )}
                 <div
                     onClick={() =>
-                        window.open("https://github.com/Shubhashish-Chakraborty/StudyWithShubh")
+                        window.open("https://github.com/Shubhashish-Chakraborty/myprivdata")
                     }
                 >
                     <Button variant="secondary" text="Github" endIcon={<Github />} />
