@@ -61,7 +61,7 @@ export const Dashboard = () => {
                     <div className="text-cyan-300 animate-bounce text-2xl font-bold hover:text-emerald-300 cursor-pointer transition-all duration-500">
                         Manage Your Accounts!!
                     </div>
-                    <div className="text-xl md:text-3xl font-bold cursor-pointer rounded-4xl hover:scale-105 transition-all duration-500 bg-black p-2 text-red-500 md:fixed">
+                    <div className="text-xl md:text-3xl font-bold cursor-pointer rounded-4xl hover:scale-105 transition-all duration-500 bg-black p-2 text-red-500">
                         Website is Under Development!
                     </div>
                 </div>
